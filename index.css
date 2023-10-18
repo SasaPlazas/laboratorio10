@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(33, 33, 33);
+}
+
+.header {
+  background-color: black;
+}
+
+.nav {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-right: 1.5rem;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #fff;
+}
+
+.banner {
+  position: relative;
+}
+
+.bannerImg {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.bannerContent {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  color: white;
+}
+
+.bannerDescription {
+  margin-bottom: 1.5rem;
+}
+
+.bannerDescription h1 {
+  font-size: 4rem;
+  font-family: "Bebas Neue";
+}
+
+.bannerButtons button {
+  padding: 1rem 2rem;
+  margin-right: 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.bannerContent button:hover {
+  background-color: #7d7d7d;
+  color: white;
+}
+
+.bannerRating {
+  margin-top: 1.5rem;
+}
+
+.star {
+  color: gold;
+}
+
+.recommended,
+.trending {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 3rem 4rem 3rem;
+}
+
+.recommended h2,
+.trending h2 {
+  font-size: 2rem;
+  font-family: "Bebas Neue";
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.recommendedMovies,
+.trendingMovies {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  list-style: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  touch-action: pan-x;
+}
+
+.movieImg {
+  height: 20rem;
+  width: 15rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.movieRating {
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.movieRating button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttonImg {
+  width: auto;
+  height: 1rem;
+  display: block;
+}

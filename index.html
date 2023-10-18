@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="active"> Inicio </a>
+        <a href="#">Movies</a>
+        <a href="#">Kids</a>
+        <a href="#">Tv Shows</a>
+        <a href="#">Perfil</a>
+      </nav>
+    </header>
+    <main class="main">
+      <div id="banner" class="banner"></div>
+      <div class="recommended">
+        <h2>Recomendados para ti</h2>
+        <ul id="recommendedMovies" class="recommendedMovies"></ul>
+      </div>
+      <div class="trending">
+        <h2>Tendencias de la semana</h2>
+        <ul id="trendingMovies" class="trendingMovies"></ul>
+      </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
